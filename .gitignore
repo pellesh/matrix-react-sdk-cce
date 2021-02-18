@@ -10,6 +10,5 @@ package-lock.json
 /matrix-react-sdk-*.tgz
 
 /.idea
-/src/component-index.js
 
 .DS_Store
