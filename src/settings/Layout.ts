@@ -1,5 +1,5 @@
 /*
-Copyright 2020 The Matrix.org Foundation C.I.C.
+Copyright 2021 Šimon Brandner <simon.bra.ag@gmail.com>
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -14,10 +14,13 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-span.mx_MVideoBody {
-    video.mx_MVideoBody {
-        max-width: 100%;
-        max-height: 300px;
-        border-radius: 4px;
-    }
+import PropTypes from 'prop-types';
+
+/* TODO: This should be later reworked into something more generic */
+export enum Layout {
+    IRC = "irc",
+    Group = "group"
 }
+
+/* We need this because multiple components are still using JavaScript */
+export const LayoutPropType = PropTypes.oneOf(Object.values(Layout));
