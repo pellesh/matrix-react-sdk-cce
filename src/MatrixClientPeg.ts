@@ -282,7 +282,7 @@ class _MatrixClientPeg implements IMatrixClientPeg {
             // Gather up to 20 ICE candidates when a call arrives: this should be more than we'd
             // ever normally need, so effectively this should make all the gathering happen when
             // the call arrives.
-            iceCandidatePoolSize: 20,
+           // iceCandidatePoolSize: 20,
             verificationMethods: [
                 verificationMethods.SAS,
                 SHOW_QR_CODE_METHOD,
